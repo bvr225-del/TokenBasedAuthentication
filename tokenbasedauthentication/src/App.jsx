@@ -32,9 +32,9 @@ function App() {
             <Route path="/" element={<Login />} />
 
             {/* Department Routes */}
-            <Route path="/departments" element={<RequireAuth><DepartmentList /></RequireAuth>} />
-            <Route path="/departments/add" element={<RequireAuth><DepartmentForm /></RequireAuth>} />
-            <Route path="/departments/edit/:id" element={<RequireAuth><DepartmentForm /></RequireAuth>} />
+            <Route path="/departments" element={<DepartmentList />} />
+            <Route path="/departments/add" element={<DepartmentForm />} />
+            <Route path="/departments/edit/:id" element={<DepartmentForm />} />
 
             {/* Employee Routes */}
             <Route path="/employees" element={<RequireAuth><EmployeeList /></RequireAuth>} />
@@ -42,14 +42,14 @@ function App() {
             <Route path="/employees/edit/:id" element={<RequireAuth><EmployeeForm /></RequireAuth>} />
 
             {/* Order Routes */}
-            <Route path="/orders" element={<RequireAuth><OrderList /></RequireAuth>} />
-            <Route path="/orders/add" element={<RequireAuth><OrderForm /></RequireAuth>} />
-            <Route path="/orders/edit/:id" element={<RequireAuth><OrderForm /></RequireAuth>} />
+            <Route path="/orders" element={<OrderList />} />
+            <Route path="/orders/add" element={<OrderForm />} />
+            <Route path="/orders/edit/:id" element={<OrderForm />} />
 
                         {/* Restaurant Routes */}
-            <Route path="/restaurants" element={<RequireAuth><RestaurantList /></RequireAuth>} />
-            <Route path="/restaurants/add" element={<RequireAuth><RestaurantForm /></RequireAuth>} />
-            <Route path="/restaurants/edit/:id" element={<RequireAuth><RestaurantForm /></RequireAuth>} />
+            <Route path="/restaurants" element={<RestaurantList />} />
+            <Route path="/restaurants/add" element={<RestaurantForm />} />
+            <Route path="/restaurants/edit/:id" element={<RestaurantForm />} />
 
 
             <Route path="*" element={<NoRecordFound />} />

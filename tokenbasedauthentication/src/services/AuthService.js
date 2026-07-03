@@ -1,4 +1,4 @@
-import PublicApi from "./PublicApi";
+import PublicApi from "./TokenApi";
 
 function setAuthUser(user, flag = true) {
     sessionStorage.setItem("authUser", JSON.stringify(user));

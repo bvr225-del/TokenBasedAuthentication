@@ -1,21 +1,21 @@
-import api from './api';
+import TokenApi from './TokenApi';
 
 export const getEmployees = async () => {
-  return await api.get('/Employee/GetEmployees');
+  return await TokenApi.get('/Employee/GetEmployees');
 };
 
 export const getEmployeeById = async (id) => {
-  return await api.get(`/Employee/GetEmployeeById/${id}`);
+  return await TokenApi.get(`/Employee/GetEmployeeById/${id}`);
 };
 
 export const createEmployee = async (employee) => {
-  return await api.post('/Employee/AddEmployee', employee);
+  return await TokenApi.post('/Employee/AddEmployee', employee);
 };
 
 export const updateEmployee = async (employee) => {
-  return await api.put('/Employee/UpdateEmployee', employee);
+  return await TokenApi.put('/Employee/UpdateEmployee', employee);
 };
 
 export const deleteEmployee = async (id) => {
-  return await api.delete(`/Employee/DeleteEmployee/${id}`);
+  return await TokenApi.delete(`/Employee/DeleteEmployee/${id}`);
 };
